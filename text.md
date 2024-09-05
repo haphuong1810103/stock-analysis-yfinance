@@ -3,8 +3,10 @@
 
 
 # Overview
-Welcome to <font color='red'>Acme Spinners</font>!
+<font color='red'>Converting price to returns</font>!
 
 
 
-Visit our website at <a href='#'>acmespinners.ca</a> to view our videos on the latest spinner techniques.
+- <b> Simple return: </b> pct_change()
+
+- <b> Log return: </b>
