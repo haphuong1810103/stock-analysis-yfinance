@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <form id="stock-form">
+        <label for="symbol">Enter stock symbol:</label>
+        <input type="text" id="symbol" name="symbol" required>
+        
+        <label for="option">Choose an analysis option:</label>
+        <select id="option" name="option">
+            <option value="A">Show price chart</option>
+            <option value="B">Show price comparison</option>
+            <option value="C">Show revenue and earnings</option>
+            <option value="D">Show cash flow statement</option>
+            <option value="E">Show analyst recommendations</option>
+            <option value="F">Show price prediction</option>
+        </select>
+        
+        <div id="date-inputs">
+            <label for="start_date">Start date:</label>
+            <input type="date" id="start_date" name="start_date">
+            
+            <label for="end_date">End date:</label>
+            <input type="date" id="end_date" name="end_date">
+        </div>
+        
+        <div id="symbol2-input" style="display: none;">
+            <label for="symbol2">Enter second stock symbol for comparison:</label>
+            <input type="text" id="symbol2" name="symbol2">
+        </div>
+        
+        <button type="submit">Analyze</button>
+    </form>
+    
+    <div id="result"></div>
+</div>
+{% endblock %}
